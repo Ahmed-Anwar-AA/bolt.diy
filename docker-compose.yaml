@@ -14,6 +14,5 @@ services:
       - OPEN_ROUTER_API_KEY=${OPEN_ROUTER_API_KEY}
     extra_hosts:
       - 'host.docker.internal:host-gateway'
-    entrypoint: []
     command: sh -c "npm install -g wrangler && pnpm run dockerstart"
     restart: unless-stopped
