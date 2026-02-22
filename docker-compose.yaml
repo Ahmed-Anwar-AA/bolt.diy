@@ -14,5 +14,5 @@ services:
       - OPEN_ROUTER_API_KEY=${OPEN_ROUTER_API_KEY}
     extra_hosts:
       - 'host.docker.internal:host-gateway'
-    command: pnpm run start
+    command: node ./build/server/index.js
     restart: unless-stopped
